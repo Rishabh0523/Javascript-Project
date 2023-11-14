@@ -11,8 +11,8 @@ const getMovies = async (url) => {
     const data = await response.json()
     showMovies(data)
 }
-getMovies(APIURL);
 
+getMovies(APIURL);
 
 const showMovies = (data) => {
     moiveBox.innerHTML = "";
