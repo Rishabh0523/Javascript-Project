@@ -15,7 +15,7 @@ const getMovies = async (url) => {
 getMovies(APIURL);
 
 const showMovies = (data) => {
-    moiveBox.innerHTML = "";
+    moiveBox.innerHTML = "" ;
     data.results.forEach(
         (result) => {
             const imagePath = result.poster_path === null ? "img/image-missing.png" : IMGPATH + result.poster_path;
